@@ -1,0 +1,121 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* background-color: rgb(204, 0, 0); */
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    pointer-events: all;
+}
+
+#title {
+    margin-bottom: 50px; 
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #1f00d1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    pointer-events: all;
+}
+
+.button:hover {
+    background-color: #020011;
+}
+
+
+#start {
+    margin-top: 600px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #1f00d1;
+    background-color: rgb(157, 0, 0);
+    padding: 1px 7px;
+    border-radius: 150px;
+    cursor: pointer;
+    user-select: none; 
+    pointer-events: all;
+}
+
+.arrow-left {
+    left: 10px; 
+}
+
+.arrow-right {
+    right: 10px; 
+}
+
+.arrow:hover {
+    color: #000000; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Botones de canciones */
+.song-button {
+    padding: 10px 20px;
+    background-color: #1f00d1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.song-button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor de los botones de canciones */
+.button-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+  
