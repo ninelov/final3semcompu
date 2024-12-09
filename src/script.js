@@ -26,9 +26,9 @@ const startButton = document.getElementById('start');
 const songButtons = document.querySelectorAll('.song-button');
 
 const songs = {
-    s1: 'models/pumpum.mp3', 
-    s2: 'models/arca.mp3', 
-    s3: 'models/diva.mp3'  
+    s1: 'musica/pumpum.mp3', 
+    s2: 'musica/arca.mp3', 
+    s3: 'musica/diva.mp3'  
 };
 
 
@@ -113,14 +113,14 @@ function addModelToIntro() {
             model.scale.set(scale, scale, scale);  // Escala del modelo
 
             // Establecer la inclinación inicial solo en el eje X
-            model.rotation.set(0.2, 80, 0);  // Incluir una ligera inclinación en el eje X (hacia adelante)
+            model.rotation.set(6, 5, 0);  // Incluir una ligera inclinación en el eje X (hacia adelante)
 
             scene.add(model);
 
             // Animación para cambiar la rotación sobre el eje Y
             const animateRotation = () => {
                 // Hacer que el modelo gire solo sobre el eje Y
-                model.rotation.y += 0.01;  // Controlar la velocidad de la rotación en el eje Y
+                model.rotation.y -= 0.03;  // Controlar la velocidad de la rotación en el eje Y
 
                 renderer.render(scene, camera);
                 requestAnimationFrame(animateRotation);
